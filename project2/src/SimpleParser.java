@@ -27,7 +27,7 @@ public class SimpleParser {
 		}
 	}
 
-	TokenStream stream;
+    TokenStream stream;
     int size = 0;
     int currPos = 0;
     Token t;
@@ -52,9 +52,6 @@ public class SimpleParser {
 		}
 	}
 	
-	private void testToken(){
-		System.out.println("token kind = "+t.kind);
-	}
 	/* This method parses the input from the given token stream.  If the input is correct according to the phrase
 	 * structure of the language, it returns normally.  Otherwise it throws a SyntaxException containing
 	 * the Token where the error was detected and an appropriate error message.  The contents of your
