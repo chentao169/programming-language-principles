@@ -76,7 +76,7 @@ public class SimpleParser {
 				consume();
 				if(! isKind(Kind.IDENT)) throw new SyntaxException(t, "parseBody: IDENT is expected");
 				consume();
-				if(! isKind(Kind.SEMI)) throw new SyntaxException(t, "parseBody: IDENT is expected");
+				if(! isKind(Kind.SEMI)) throw new SyntaxException(t, "parseBody: ； is expected");
 				else{
 					consume();
 				}
