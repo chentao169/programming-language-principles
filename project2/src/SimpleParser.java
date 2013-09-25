@@ -259,10 +259,10 @@ public class SimpleParser {
 		
 		if(isKind(Kind.QUESTION)){
 			consume();
-			if(! isExpr()) throw new SyntaxException(t, " isExpr: isExpr is expected");	
+			if(! isExpr()) throw new SyntaxException(t, " isExpr: expr is expected");	
 			if(! isKind(Kind.COLON)) throw new SyntaxException(t, " isExpr: : is expected");
 			consume();			
-			if(! isExpr()) throw new SyntaxException(t, " isExpr: isExpr is expected");	
+			if(! isExpr()) throw new SyntaxException(t, " isExpr: expr is expected");	
 		}		
 		return true;			
 	}
